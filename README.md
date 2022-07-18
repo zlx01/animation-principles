@@ -1,5 +1,8 @@
 # learn-animation-principle
 
+reference: [article](https://cssanimation.rocks/principles/)  [translation](https://cssanimation.rocks/cn/principles/)
+
+---
 This template should help get you started developing with Vue 3 in Vite.
 
 ## Recommended IDE Setup
