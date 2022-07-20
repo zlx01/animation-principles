@@ -1,8 +1,10 @@
 import { createRouter, createWebHashHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
-const principleComponents = import.meta.globEager(
-  "../views/PrincipleView\\d{1,}.vue"
-);
+const principleComponents = import.meta.glob("../views/PrincipleView*.vue", {
+  eager: true,
+});
+
+console.log("principleComponents", principleComponents);
 
 const routes = Object.keys(principleComponents).map((key) => {
   const principle = principleComponents[key].default;
